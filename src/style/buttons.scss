@@ -1,0 +1,8 @@
+.btn{
+    @include base-btn();
+}
+
+.filter-button{
+    @include base-btn();
+    border-radius: 0px;
+}

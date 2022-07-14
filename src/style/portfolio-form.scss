@@ -1,0 +1,44 @@
+.portfolio-form-wrapper{
+    @include base-grid();
+    grid-template-columns: 1fr;
+
+    padding: 42px;
+
+    @include input-element();
+    input{
+        margin-bottom: 0px;
+       
+    } .btn {
+         padding: 0px 20px;
+     }
+     .dz-remove{
+        color: black;
+     }
+     .dz-preview{
+        background-color: transparent;
+     }
+
+    .image-uploaders{
+        @include base-grid;
+        grid-template-columns: 200px 200px 200px;
+        .portfolio-manager-image-wrapper{
+            img{
+                width: 100%;
+                height: 120px;
+                object-fit: cover;
+                border-radius: 20px;
+            }
+
+            .image-removal-link{
+                display: flex;
+                justify-content: center;
+                a{
+                    font-weight: 900;
+                    font-size: 1.3em;
+                    color: $warning;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

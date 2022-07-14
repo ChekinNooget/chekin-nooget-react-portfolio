@@ -1,0 +1,13 @@
+.one-column {
+    @include base-grid();
+    grid-template-columns: 1fr;
+    textarea{
+        font-family: "Titillium Web", sans-serif;
+    }
+
+}
+.two-column {
+    @include base-grid();
+    grid-template-columns: 1fr 1fr;
+
+}
